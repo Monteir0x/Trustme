@@ -20,4 +20,9 @@ public class ActivityService {
     public Activity create(Activity activity){
         return activityRepository.save(activity);
     }
+
+    public void delete(String id){
+        Activity activity = activityRepository.getReferenceById(String.valueOf(id));
+        activityRepository.delete(activity);
+    }
 }

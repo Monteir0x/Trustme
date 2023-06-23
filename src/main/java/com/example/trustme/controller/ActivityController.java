@@ -25,4 +25,10 @@ public class ActivityController {
         return ResponseEntity.status(HttpStatus.CREATED).body(activityService.create(activity));
     }
 
+    @DeleteMapping("/{id}")
+    private ResponseEntity<Void> delete (@PathVariable String id){
+        activityService.delete(id);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
 }
