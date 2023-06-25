@@ -12,7 +12,6 @@ import java.util.List;
 public class ActivityService {
     private final ActivityRepository activityRepository;
 
-
     public List<Activity> findAll(){
         return activityRepository.findAll();
     }

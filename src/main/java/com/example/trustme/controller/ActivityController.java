@@ -30,5 +30,4 @@ public class ActivityController {
         activityService.delete(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
-
 }
